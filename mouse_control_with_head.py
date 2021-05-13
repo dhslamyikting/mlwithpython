@@ -59,12 +59,10 @@ while True:
 			sleep(1)
 			continue
 		elif predicted_class_name == 'Left':
-		    #pyautogui.moveTo(current_x-80,current_y,duration=1)
-		    pyautogui.press('play')
+		    pyautogui.moveTo(current_x-80,current_y,duration=1)
 		    sleep(1)
 		elif predicted_class_name == 'Right':
-		    #pyautogui.moveTo(current_x+80,current_y,duration=1)
-		    pyautogui.press('pause')
+		    pyautogui.moveTo(current_x+80,current_y,duration=1)
 		    sleep(1)
 		elif predicted_class_name == 'Down':
 		    pyautogui.moveTo(current_x,current_y+80,duration=1)
